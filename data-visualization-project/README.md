@@ -40,3 +40,77 @@ data-visualization-project/
 └── run.py / app.py (optional, depending on framework)
 
 ```
+## ⚡ Installation
+1. Clone the repository
+```bash
+git clone <repository_url>
+cd data-visualization-project
+```
+
+2. Create and activate a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## 🛠 Usage
+1. Preprocess dataset (clean missing values, convert dates, etc.):
+```bash
+python src/data_preprocessing.py
+```
+
+2. Generate visualizations:
+```bash
+python src/visualization.py
+```
+
+3. Optional interactive dashboard:
+- Streamlit:
+```bash
+streamlit run app/app.py
+```
+- Flask:
+```bash
+python app/app.py
+```
+
+4. Download filtered datasets (if using dashboard)
+
+## ⚙️ Configuration (config.yaml)
+- paths → Paths to raw and processed datasets
+- preprocessing → Options for cleaning data
+- visualization → Chart settings
+- download → Default filenames
+  Example
+  ```yaml
+  paths:
+  raw_data: "data/raw/dataset.csv"
+  processed_data: "data/processed/cleaned_dataset.csv"
+  ```
+
+  ## 🐳 Deployment Options
+- Streamlit Cloud (if using Streamlit)
+- Heroku / Render (if using Flask or Dash)
+- Docker for containerized deployment
+
+## 📦 Dependencies
+
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+- streamlit / flask (optional)
+
+## ✅ Notes
+- Place raw dataset in data/raw/
+- Processed files will appear in data/processed/
+- Charts are stored in reports/figures/ if saved
+- All configuration is centralized in config.yaml
+  
