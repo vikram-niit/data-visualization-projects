@@ -99,7 +99,6 @@ python app/app.py
 - Docker for containerized deployment
 
 ## 📦 Dependencies
-
 - Python 3.8+
 - pandas
 - numpy
@@ -114,3 +113,4 @@ python app/app.py
 - Charts are stored in reports/figures/ if saved
 - All configuration is centralized in config.yaml
   
+
