@@ -93,7 +93,7 @@ python app/app.py
   processed_data: "data/processed/cleaned_dataset.csv"
   ```
 
-  ## 🐳 Deployment Options
+## 🐳 Deployment Options
 - Streamlit Cloud (if using Streamlit)
 - Heroku / Render (if using Flask or Dash)
 - Docker for containerized deployment
@@ -113,4 +113,5 @@ python app/app.py
 - Charts are stored in reports/figures/ if saved
 - All configuration is centralized in config.yaml
   
+
 
